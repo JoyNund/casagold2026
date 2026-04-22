@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-cream: var(--theme-cream);
+  --color-brand-beige-light: var(--theme-beige-light);
+  --color-brand-beige-medium: var(--theme-beige-medium);
+  --color-brand-gold: var(--theme-gold);
+  --color-brand-grey-blue: var(--theme-grey-blue);
+  --color-brand-navy: var(--theme-navy);
+  --color-brand-white: var(--theme-white);
+  --color-brand-heading: var(--theme-heading);
+
+  --font-sans: 'Helvetica Neue', Arial, sans-serif;
+  --font-serif: var(--font-sans);
+}
+
+@layer base {
+  :root {
+    --theme-cream: #FDFCFB;
+    --theme-beige-light: #EAE2D8;
+    --theme-beige-medium: #D1C7B7;
+    --theme-gold: #BF9E77;
+    --theme-grey-blue: #6B7280;
+    --theme-navy: #1A1A1A;
+    --theme-heading: #374151; /* Dark Gray for light mode */
+    --theme-white: #FFFFFF;
+  }
+
+  .dark {
+    --theme-cream: #1d2930;
+    --theme-beige-light: #2c3c45;
+    --theme-beige-medium: #3b505d;
+    --theme-gold: #BF9E77;
+    --theme-grey-blue: #9ca3af;
+    --theme-navy: #f8fafc;
+    --theme-heading: #f8fafc; /* Keep crisp white in dark mode */
+    --theme-white: #25333b;
+  }
+
+  body {
+    background-color: var(--color-brand-cream);
+    color: var(--color-brand-navy);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}
+
+/* Custom scrollbar for a premium feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--theme-cream);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--theme-gold);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--theme-beige-medium);
+}
