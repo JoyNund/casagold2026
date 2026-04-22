@@ -172,7 +172,7 @@ function Hero() {
             </span>
           </motion.h1>
           
-          <motion.p variants={fadeUp} className="text-lg lg:text-xl text-brand-grey-blue font-light mb-10 max-w-lg leading-relaxed">
+          <motion.p variants={fadeUp} className="text-lg max-sm:text-sm lg:text-xl text-brand-grey-blue font-light mb-10 max-w-lg leading-relaxed">
             Especialistas en terrenos, departamentos de lujo y locales comerciales. Tu patrimonio merece una gestión extraordinaria.
           </motion.p>
         </motion.div>
