@@ -204,9 +204,9 @@ function Hero() {
 
           <form className="space-y-4" onSubmit={(e) => { e.preventDefault(); window.open(WHATSAPP_URL, '_blank'); }}>
             <div>
-              <input type="text" required className="w-full bg-brand-white border border-brand-beige-medium rounded-md px-4 py-3 text-sm focus:outline-none focus:border-brand-gold transition-colors text-brand-navy shadow-sm" placeholder="Tu nombre completo" />
+              <input type="text" required className="max-w-md bg-brand-white border border-brand-beige-medium rounded-md px-4 py-3 text-sm focus:outline-none focus:border-brand-gold transition-colors text-brand-navy shadow-sm" placeholder="Tu nombre completo" />
             </div>
-            <div className="flex gap-3">
+            <div className="flex gap-3 flex-wrap">
               <input type="tel" required className="flex-1 min-w-0 bg-brand-white border border-brand-beige-medium rounded-md px-4 py-3 text-sm focus:outline-none focus:border-brand-gold transition-colors text-brand-navy shadow-sm" placeholder="Teléfono" />
               <select className="flex-1 min-w-0 bg-brand-white border border-brand-beige-medium rounded-md px-4 py-3 text-sm focus:outline-none focus:border-brand-gold transition-colors text-brand-navy appearance-none shadow-sm">
                 <option>Departamento</option>
