@@ -182,7 +182,7 @@ function Hero() {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="bg-brand-white p-4 lg:p-8 rounded-xl border border-brand-beige-light shadow-[0_4px_20px_rgba(191,158,119,0.05)] relative"
+          className="bg-brand-white p-4 lg:p-6 rounded-xl border border-brand-beige-light shadow-[0_4px_20px_rgba(191,158,119,0.05)] relative"
         >
           <h3 className="text-xl font-bold font-serif text-brand-navy mb-4 tracking-tight">¿Cuál es tu objetivo?</h3>
           
